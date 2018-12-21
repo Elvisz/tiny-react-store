@@ -1,0 +1,19 @@
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/dist
+/docs
+/es
+/lib
+/typings
+
+# misc
+.DS_Store
+.history
+.coverage
+
+npm-debug.log*

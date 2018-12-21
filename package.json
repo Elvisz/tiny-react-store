@@ -1,0 +1,51 @@
+{
+  "name": "tiny-react-store",
+  "version": "1.0.0",
+  "description": "tiny-react-store",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "test:dev": "jest --env=jsdom --watchAll",
+    "test": "jest --clearCache && jest --env=jsdom --coverage"
+  },
+  "keywords": [
+    "react",
+    "store"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@gitlab.shishike.com:38401/fe_finance/understand-react-fiber.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/enzyme": "^3.1.15",
+    "@types/jest": "^23.3.10",
+    "@types/react": "^16.7.17",
+    "@types/react-dom": "^16.0.11",
+    "babel-jest": "^23.6.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "husky": "^1.3.0",
+    "jest": "^23.6.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3",
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
+    "rxjs": "^6.3.3",
+    "ts-jest": "^23.10.5",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-react": "^3.6.0",
+    "typedoc": "^0.13.0",
+    "typescript": "^3.2.2"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "peerDependencies": {
+    "react": ">= 16.6.3",
+    "react-dom": ">= 16.6.3",
+    "rxjs": ">= 6.3.3"
+  }
+}
