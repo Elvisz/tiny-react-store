@@ -1,5 +1,7 @@
 # tiny-react-store
 
+[![Build Status](https://travis-ci.org/Elvisz/tiny-react-store.svg?branch=master)](https://travis-ci.org/Elvisz/tiny-react-store)
+
 An example for react store based on rxjs and context api.
 
 # docs
