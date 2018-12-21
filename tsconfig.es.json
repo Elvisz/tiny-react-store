@@ -1,9 +1,8 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./lib",
-    "declaration": false,
-    "module": "commonjs",
+    "declarationDir": "./typings",
+    "declaration": true,
     "target": "es5"
   },
   "include": ["src"]

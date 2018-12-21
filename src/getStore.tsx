@@ -4,9 +4,9 @@ import { BehaviorSubject, Subscription } from 'rxjs';
 export default <TStore extends object = {}>(
   subject: BehaviorSubject<TStore>,
   Provider: React.Provider<TStore>
-) =>
+): React.ComponentClass =>
   class Store extends React.Component {
-    private subscription: Subscription | null = null;
+    public subscription: Subscription | null = null;
 
     public componentDidMount() {
       this.subscription = subject.subscribe(() => this.forceUpdate());

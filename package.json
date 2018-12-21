@@ -2,8 +2,13 @@
   "name": "tiny-react-store",
   "version": "1.0.0",
   "description": "tiny-react-store",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "typings/index.d.ts",
   "scripts": {
-    "build": "tsc --project tsconfig.json",
+    "build:es": "tsc --project tsconfig.es.json",
+    "build:commonjs": "tsc --project tsconfig.commonjs.json",
+    "build": "rimraf es lib typings && npm run build:es && npm run build:commonjs",
     "test:dev": "jest --env=jsdom --watchAll",
     "test": "jest --clearCache && jest --env=jsdom --coverage"
   },
